@@ -24,31 +24,19 @@
  */
 package jenkins.branch.buildstrategies.basic.harness;
 
-import edu.umd.cs.findbugs.annotations.CheckForNull;
-import edu.umd.cs.findbugs.annotations.NonNull;
-import hudson.Extension;
-import hudson.model.ItemGroup;
-import hudson.model.TaskListener;
 import java.io.IOException;
-import java.util.Map;
-import javax.annotation.Nonnull;
-import jenkins.branch.MultiBranchProject;
-import jenkins.branch.MultiBranchProjectFactory;
-import jenkins.branch.MultiBranchProjectFactoryDescriptor;
-import jenkins.scm.api.SCMSource;
-import jenkins.scm.api.SCMSourceCriteria;
+
+import org.kohsuke.stapler.DataBoundConstructor;
 
 import hudson.BulkChange;
 import hudson.Extension;
 import hudson.model.FreeStyleBuild;
 import hudson.model.FreeStyleProject;
 import hudson.model.Item;
-import java.io.IOException;
 import jenkins.branch.Branch;
 import jenkins.branch.BranchProjectFactory;
 import jenkins.branch.BranchProjectFactoryDescriptor;
 import jenkins.branch.MultiBranchProject;
-import org.kohsuke.stapler.DataBoundConstructor;
 
 public class BasicBranchProjectFactory extends BranchProjectFactory<FreeStyleProject, FreeStyleBuild> {
 
